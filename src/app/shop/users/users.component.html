@@ -18,7 +18,7 @@
     <td >{{user.age}}</td>
     <td >{{user.country}}</td>
     <td>
-      <span [attr.uk-icon]="user.active ? 'check' : 'close'"></span>
+      <span [attr.uk-icon]="user.activity ? 'check' : 'close'"></span>
     </td>
     <td style="width: 250px">
       <a routerLink="user-editor/{{user.id}}"><input class = "uk-button uk-button-primary" value="Edytuj" type="button"></a>
@@ -29,6 +29,6 @@
 </table>
 
 <div>
-  <a routerLink="user-editor"><input style="background-color: #32d296; color: white" class="uk-button" value="Dodaj użytkownika" type="button"></a>
+  <a routerLink="user-editor"><input style="background-color: #32d296; color: white" class="uk-button" value="Dodaj" type="button"></a>
 </div>
 

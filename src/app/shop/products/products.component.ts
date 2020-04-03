@@ -12,8 +12,6 @@ export class ProductsComponent implements OnInit {
 
   constructor(private productsStorage: ProductStorageService, private httpClient: HttpClientService) { }
 
-
-
 products: Product[] = [];
 
   ngOnInit(): void {
@@ -23,7 +21,6 @@ products: Product[] = [];
   getProducts() {
     this.httpClient.getProducts().subscribe(products => this.products = products);
   }
-
 
   removeProduct(id: number) {
     this.httpClient.removeProduct(id).subscribe(r => {

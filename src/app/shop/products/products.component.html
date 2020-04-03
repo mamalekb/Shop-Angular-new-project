@@ -20,13 +20,13 @@
         <span [attr.uk-icon]="product.available ? 'check' : 'close'"></span>
       </td>
       <td style="width: 250px">
-        <a routerLink="editor/{{product.id}}"><input class = "uk-button uk-button-primary" value="Edytuj" type="button"></a>
-        <a (click)="removeProduct(product.id)"><input class = "uk-button uk-button-danger" value="Usuń" type="button"></a>
+        <a routerLink="editor/{{product.id}}"><input type="button" class = "uk-button uk-button-primary" value="Edytuj"></a>
+        <a (click)="removeProduct(product.id)"><input type="button" class = "uk-button uk-button-danger" value="Usuń"></a>
       </td>
     </tr>
     </tbody>
   </table>
 
   <div>
-    <a routerLink="editor"><input style="background-color: #32d296; color: white" class="uk-button" value="Dodaj produkt" type="button"></a>
+    <a routerLink="editor"><input type="button" style="background-color: #32d296; color: white" class="uk-button" value="Dodaj"></a>
   </div>

@@ -14,15 +14,15 @@ const routes: Routes = [
       {path: '', component: ProductsComponent},
       {path: 'editor', component: EditorComponent},
       {path: 'editor/:id', component: EditorComponent},
+      {path: 'shipping', component: ShippingComponent},
       {path: 'products',  component: ProductsComponent},
       {path: 'products/editor', component: EditorComponent},
       {path: 'products/editor/:id', component: EditorComponent},
       {path: 'users',  component: UsersComponent},
-      {path: 'users/user-editor', component: UserEditorComponent},
-      {path: 'users/user-editor/:id', component: UserEditorComponent},
       {path: 'user-editor', component: UserEditorComponent},
       {path: 'user-editor/:id', component: UserEditorComponent},
-      {path: 'shipping', component: ShippingComponent}
+      {path: 'users/user-editor', component: UserEditorComponent},
+      {path: 'users/user-editor/:id', component: UserEditorComponent}
     ]}
 ];
 

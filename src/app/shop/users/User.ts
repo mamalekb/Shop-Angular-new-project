@@ -4,5 +4,5 @@ export class User {
   email: string;
   age: number;
   country: string;
-  active: boolean;
+  activity: boolean;
 }

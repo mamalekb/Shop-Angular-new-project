@@ -12,9 +12,9 @@ export class UserStorageService {
   constructor() { }
 
 private users: User[] = [
-  {id: 1, login: 'User 1', email: 'user1@gmail.com', age: 18, country: 'Polska', active: true},
-  {id: 2, login: 'User 2', email: 'user2@gmail.com', age: 37, country: 'Norwegia', active: false},
-  {id: 3, login: 'User 3', email: 'user2@gmail.com', age: 30, country: 'Kanada', active: true},
+  {id: 1, login: 'User1', email: 'user1@wszib.edu.pl', age: 25, country: 'Tanzania', activity: false},
+  {id: 2, login: 'User2', email: 'user2@wszib.edu.pl', age: 18, country: 'Rosja', activity: false},
+  {id: 3, login: 'User3', email: 'user2@wszib.edu.pl', age: 42, country: 'USA', activity: true},
 ];
 
   private idCount: number = 4;

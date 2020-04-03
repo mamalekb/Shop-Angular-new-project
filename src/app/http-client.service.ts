@@ -31,7 +31,6 @@ export class HttpClientService {
     return this.httpClient.post(`${BASE_URL}/products/save`, JSON.stringify(product), HTTP_OPTIONS);
   }
 
-
   getUsers(): Observable<User[]> {
     return this.httpClient.get<User[]>(`${(BASE_URL)}/users`);
   }

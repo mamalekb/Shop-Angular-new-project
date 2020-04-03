@@ -14,8 +14,8 @@ export class UsersComponent implements OnInit {
   constructor(private usersStorage: UserStorageService, private httpClient: HttpClientService) { }
 
   users: User[] = [
-    {id: 1, login: 'User1', email: 'user1@gmail.com', age: 23, country: 'Polska', active: true},
-    {id: 2, login: 'User2', email: 'user2@gmail.com', age: 56, country: 'Kuwejt', active: false},
+    {id: 1, login: 'User1', email: 'user1@wszib.edu.pl', age: 27, country: 'Czechy', activity: false},
+    {id: 2, login: 'User2', email: 'user2@wszib.edu.pl', age: 32, country: 'Nepal', activity: true},
 
   ];
 

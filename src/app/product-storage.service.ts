@@ -11,12 +11,12 @@ export class ProductStorageService {
   }
 
   private products: Product[] = [
-    {id: 1, name: 'Product 1', price: 10.00, quantity: 1000, available: true},
-    {id: 2, name: 'Product 2', price: 15.00, quantity: 999, available: false},
-    {id: 3, name: 'Product 3', price: 13.00, quantity: 300, available: true},
+    {id: 1, name: 'Product1', price: 9.00, quantity: 250, available: true},
+    {id: 2, name: 'Product2', price: 15.00, quantity: 142, available: true},
+    {id: 3, name: 'Product3', price: 23.00, quantity: 50, available: false},
   ];
 
-  private idCount: number = 4;
+  private idCount = 4;
 
   getProducts(): Observable<Product[]> {
     return of(this.products);
@@ -27,8 +27,7 @@ export class ProductStorageService {
     this.products.splice(productIndex, 1);
   }
 
-  /* private idCount: number = 4;*/
-  saveProduct(product: Product) {
+   saveProduct(product: Product) {
     if (product.id) {
       const productIndex = this.products.findIndex(p => p.id === product.id);
       this.products[productIndex] = product;
@@ -38,7 +37,6 @@ export class ProductStorageService {
       this.idCount++;
     }
   }
-
 
   getProduct(id: number) {
     const productIndex = this.products.findIndex(p => p.id === id);

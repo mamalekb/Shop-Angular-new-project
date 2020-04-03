@@ -11,7 +11,7 @@
  import {FormsModule} from '@angular/forms';
  import { UsersComponent } from './shop/users/users.component';
  import { UserEditorComponent } from './shop/users/user-editor/user-editor.component';
- import {HttpClient, HttpClientModule} from "@angular/common/http";
+ import {HttpClient, HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
